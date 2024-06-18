@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all .3s ease-in-out;
+}
+:root{
+    --gray-color: #4a4a4a;
+    --black-color:#343a40;
+    --white-color:#fff;
+    --red-color:#ff0000;
+    --green-color:#28a745;
+    --blue-color:#4c9eea;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+a, p, span, i{
+    font-size: 1.7rem;
+}
+.container-max-width{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.container{
+    padding: 2rem;
+}
+
+.container-content .image{
+    padding: 1rem;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.container-content .image p{
+    padding: 1rem;
+}
+.container-content .image img{
+    width: 100%;
+}
+
+.container-content .img-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-content .img-center .images{
+    max-width: 100%;
+}
+.container-content .img-center .images p{
+    padding: 1rem;
+}
+.container-content .img-center .images img{
+    width: 100%;
+}
+.container-content h1{
+    padding: .8rem 0 2rem;
+    color: var(--black-color);
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+.container-content h2{
+    padding: .8rem 0;
+    color: var(--black-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.container-content h3{
+    padding: 1.5rem 0;
+    color: var(--black-color);
+    line-height: 1.3;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.container-content .texts p{
+    line-height: 1.7;
+    color: var(--gray-color);
+    padding: .5rem 0;
+}
+.container-content .texts p span{
+    line-height: 1.7;
+    color: var(--blue-color);
+    font-weight: bold;
+}
+/* left */
+.container-content .left{
+    padding: 1.5rem;
+    border: .1rem solid #777777;
+}
+.un-lest{
+    padding-left: 4rem;
+    line-height: 1.7;
+    font-size: 1.7rem;
+}
+.lest{
+    padding-left: 4rem;
+    line-height: 1.7;
+    font-size: 1.7rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-content .image{
+        max-width: 100%;
+    }
+    .container-content .image p{
+        font-size: 1.3rem;
+    }
+    .container-content .img-center .images p{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:450px){
+    html{
+        font-size: 45%;
+    }
+}

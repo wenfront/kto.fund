@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all .3s ease-in-out;
+}
+:root{
+    --gray-color: #4a4a4a;
+    --black-color:#343a40;
+    --white-color:#fff;
+    --red-color:#ff0000;
+    --green-color:#28a745;
+    --blue-color:#4c9eea;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+a, p, span, i{
+    font-size: 1.7rem;
+}
+.container-max-width{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.container{
+    padding: 2rem;
+}
+.grid-3x1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.grid-3x1 .card{
+    overflow: hidden;
+    border: .1rem solid #848484;
+}
+.grid-3x1 .card:hover{
+    background: #EAEDED ;
+}
+.grid-3x1 .card .image-grid{
+    max-width: 100%;
+}
+.grid-3x1 .card .image-grid img{
+    width: 100%;
+}
+.grid-3x1 .card:hover .image-grid img{
+    transform: scale(1.1);
+}
+.grid-3x1 .card .dsec{
+    padding: 2rem;
+}
+.grid-3x1 .card .dsec span{
+    font-size: 1.2rem;
+    color: var(--blue-color);
+    font-weight: bold;
+}
+.grid-3x1 .card .dsec .title-grid{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--gray-color);
+    padding: 1.5rem 0;
+}
+.grid-3x1 .card .dsec p{
+    font-size: 1.7rem;
+    line-height: 1.7;
+    color: var(--gray-color);
+    padding: .5rem 0 2rem;
+}
+.grid-3x1 .card .dsec .btn-read-more{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.grid-3x1 .card .dsec .btn-read-more a{
+    background: var(--blue-color);
+    padding: 1rem 1.5rem;
+    color: #fff;
+}
+@media screen and (max-width:900px){
+    .grid-3x1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    .grid-3x1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-3x1 .card .dsec .title-grid{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:450px){
+    html{
+        font-size: 45%;
+    }
+}
